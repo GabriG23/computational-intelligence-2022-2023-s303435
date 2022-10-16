@@ -6,7 +6,7 @@
 
 In the code you can find 2 solutions:
 - the greedy one, uploaded by professor
-- and my solution
+- and my solution (it is in the folder lab1, file: __init__.py)
 
 These are the results:
 
