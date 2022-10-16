@@ -10,11 +10,10 @@ In the code you can find 2 solutions:
 
 These are the results:
 
-N = number of sets
-w = weight, number of elements in our sets
-nodes = number of nodes
-bloat = In computer programming, code bloat refers to the presence of program code (source code or machine code) that is perceived as unnecessarily long, slow, or otherwise
-wasteful of resources.
+- N = number of sets
+- w = weight, number of elements in our sets
+- nodes = number of nodes
+- bloat = In computer programming, code bloat refers to the presence of program code (source code or machine code) that is perceived as unnecessarily long, slow, or otherwise wasteful of resources.
 
 # Greedy Solution
 - INFO:root:Greedy solution for N=5: w=5 nodes=5 (bloat=0%)
