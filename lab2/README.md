@@ -2,85 +2,28 @@
 - Student: Gabriele Greco
 - ID: s303435
 
-# Lab 2: Set Covering with EA (Evolution Algorithm)
+# Lab 2: Set Covering with EA (Evolutionary Algorithm)
 
-In the code you can find 2 solutions:
-- the greedy one, uploaded by professor
-- and my solution (it is in the folder lab1, file: __init__.py)
+The code is in the directory lab2, name of the file `main.ipynb`.
+- `Libraries`: list of packages used
+- `Data initialization and functions`: constants used and algorithm functions (evaluate, tournament, cross_over and mutation
+- `Initial Population`: function to create the population
+- `Evolution`: main function of the program
 
-These are the results:
+I started working from the solution One Max made by professor in class and then I adapted to the Set Covering problem, creating my fitness evaluation function.
 
-- N = number of sets
-- w = weight, number of elements in our sets
-- nodes = number of nodes
-- bloat = In computer programming, code bloat refers to the presence of program code (source code or machine code) that is perceived as unnecessarily long, slow, or otherwise wasteful of resources.
+This is a list of major variables:
+- `N` = number of elements
+- `population` = number of sets 
+- `population_size` = len(population) (N * 5)
+- `mutation_rate` = 0.55, I started from
+- `offspring_size` = population_size / 2 (int)
+- `NUM_GENERATIONS` = equal to N * 2, it scale with N because form small number of N after some computation we reach the steady state, so further iterations are useless
 
-# Greedy Solution
-- INFO:root:Greedy solution for N=5: w=5 nodes=5 (bloat=0%)
-- INFO:root:Greedy solution for N=10: w=13 nodes=7 (bloat=30%)
-- INFO:root:Greedy solution for N=20: w=46 nodes=12 (bloat=130%)
-- INFO:root:Greedy solution for N=100: w=332 nodes=19 (bloat=232%)
-- INFO:root:Greedy solution for N=500: w=2162 nodes=24 (bloat=332%)
-- INFO:root:Greedy solution for N=1000: w=4652 nodes=26 (bloat=365%)
-
-# My Solution
-- INFO:root:My solution for N=5: w=5 nodes=3 (bloat=0%)
-- INFO:root:My solution for N=10: w=11 nodes=3 (bloat=10%)
-- INFO:root:My solution for N=20: w=24 nodes=4 (bloat=20%)
-- INFO:root:My solution for N=100: w=203 nodes=9 (bloat=103%)
-- INFO:root:My solution for N=500: w=1573 nodes=15 (bloat=215%)
-- INFO:root:My solution for N=1000: w=3889 nodes=19 (bloat=289%)
-
-
-0.45
-INFO:root: Solution for N=5: w=5 (bloat=0%)
-INFO:root: Solution for N=10: w=10 (bloat=0%)
-INFO:root: Solution for N=20: w=24 (bloat=20%)
-INFO:root: Solution for N=50: w=83 (bloat=66%)
-INFO:root: Solution for N=100: w=194 (bloat=94%)
-
-0.55
-INFO:root: Solution for N=5: w=5 (bloat=0%)
-INFO:root: Solution for N=10: w=10 (bloat=0%)
-INFO:root: Solution for N=20: w=27 (bloat=35%)
-INFO:root: Solution for N=50: w=79 (bloat=58%)
-INFO:root: Solution for N=100: w=187 (bloat=87%)
-
-0.70
-INFO:root: Solution for N=5: w=5 (bloat=0%)
-INFO:root: Solution for N=10: w=10 (bloat=0%)
-INFO:root: Solution for N=20: w=26 (bloat=30%)
-INFO:root: Solution for N=50: w=83 (bloat=66%)
-INFO:root: Solution for N=100: w=190 (bloat=90%)
-
-0.95
-INFO:root: Solution for N=5: w=5 (bloat=0%)
-INFO:root: Solution for N=10: w=10 (bloat=0%)
-INFO:root: Solution for N=20: w=27 (bloat=35%)
-INFO:root: Solution for N=50: w=84 (bloat=68%)
-INFO:root: Solution for N=100: w=184 (bloat=84%)
-
-
-0.55 - 1000 gen
-INFO:root: Solution for N=5: w=5 (bloat=0%)
-INFO:root: Solution for N=10: w=10 (bloat=0%)
-INFO:root: Solution for N=20: w=27 (bloat=35%)
-INFO:root: Solution for N=50: w=79 (bloat=58%)
-INFO:root: Solution for N=100: w=187 (bloat=87%)
-INFO:root: Solution for N=500: w=1345 (bloat=169%)
-
-0.55 - 500 gen
-INFO:root: Solution for N=5: w=5 (bloat=0%)
-INFO:root: Solution for N=10: w=10 (bloat=0%)
-INFO:root: Solution for N=20: w=27 (bloat=35%)
-INFO:root: Solution for N=50: w=79 (bloat=58%)
-INFO:root: Solution for N=100: w=187 (bloat=87%)
-INFO:root: Solution for N=500: w=1345 (bloat=169%)
-
-0.55 - 100 gen
-INFO:root: Solution for N=5: w=5 (bloat=0%)
-INFO:root: Solution for N=10: w=10 (bloat=0%)
-INFO:root: Solution for N=20: w=27 (bloat=35%)
-INFO:root: Solution for N=50: w=79 (bloat=58%)
-INFO:root: Solution for N=100: w=187 (bloat=87%)
-INFO:root: Solution for N=500: w=1345 (bloat=169%)
+I've tried differents values of mutation_rate and kept 0.55 which is the best one. With lower and higher value we don't obtain good results for higher N values.
+INFO:root: Solution for N=5: w=5 (bloat=0%) Fitness calls=60
+INFO:root: Solution for N=10: w=10 (bloat=0%) Fitness calls=462
+INFO:root: Solution for N=20: w=27 (bloat=35%) Fitness calls=714
+INFO:root: Solution for N=50: w=79 (bloat=58%) Fitness calls=10813
+INFO:root: Solution for N=100: w=176 (bloat=76%) Fitness calls=43027
+INFO:root: Solution for N=500: w=1314 (bloat=163%) Fitness calls=905809
