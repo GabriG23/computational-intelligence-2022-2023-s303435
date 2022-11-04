@@ -20,10 +20,19 @@ This is a list of major variables:
 - `offspring_size` = population_size / 2 (int)
 - `NUM_GENERATIONS` = equal to N * 2, it scale with N because form small number of N after some computation we reach the steady state, so further iterations are useless
 
-I've tried differents values of mutation_rate and kept 0.55 which is the best one. With lower and higher value we don't obtain good results for higher N values.
-- INFO:root: Solution for N=5: w=5 (bloat=0%) Fitness calls=60
-- INFO:root: Solution for N=10: w=10 (bloat=0%) Fitness calls=462
-- INFO:root: Solution for N=20: w=27 (bloat=35%) Fitness calls=714
-- INFO:root: Solution for N=50: w=79 (bloat=58%) Fitness calls=10813
-- INFO:root: Solution for N=100: w=176 (bloat=76%) Fitness calls=43027
-- INFO:root: Solution for N=500: w=1314 (bloat=163%) Fitness calls=905809
+I've tried differents values of mutation_rate. The chose of this value depends on the size of our problem, lower/mid values are good lower values of N, with higher value of N we obtain better results if we increase the mutation_rate
+- mutation_rate = 0.55
+- INFO:root: Solution for N=5: w=5 (bloat=0%) Fitness calls=310
+- INFO:root: Solution for N=10: w=10 (bloat=0%) Fitness calls=1512
+- INFO:root: Solution for N=20: w=24 (bloat=20%) Fitness calls=1564
+- INFO:root: Solution for N=50: w=79 (bloat=58%) Fitness calls=16113
+- INFO:root: Solution for N=100: w=163 (bloat=63%) Fitness calls=53677
+- INFO:root: Solution for N=500: w=1362 (bloat=172%) Fitness calls=951009
+
+- mutation_rate = 0.80
+- INFO:root: Solution for N=5: w=5 (bloat=0%) Fitness calls=310
+- INFO:root: Solution for N=10: w=10 (bloat=0%) Fitness calls=1512
+- INFO:root: Solution for N=20: w=24 (bloat=20%) Fitness calls=1564
+- INFO:root: Solution for N=50: w=79 (bloat=58%) Fitness calls=16113
+- INFO:root: Solution for N=100: w=187 (bloat=87%) Fitness calls=53677
+- INFO:root: Solution for N=500: w=1338 (bloat=168%) Fitness calls=951009
