@@ -21,7 +21,7 @@ This is a list of major variables:
 - `NUM_GENERATIONS` = equal to N * 2, it scale with N because form small number of N after some computation we reach the steady state, so further iterations are useless
 
 I've tried differents values of mutation_rate. The chose of this value depends on the size of our problem, lower/mid values are good lower values of N, with higher value of N we obtain better results if we increase the mutation_rate
-- mutation_rate = 0.55
+# mutation_rate = 0.55
 - INFO:root: Solution for N=5: w=5 (bloat=0%) Fitness calls=310
 - INFO:root: Solution for N=10: w=10 (bloat=0%) Fitness calls=1512
 - INFO:root: Solution for N=20: w=24 (bloat=20%) Fitness calls=1564
@@ -29,7 +29,7 @@ I've tried differents values of mutation_rate. The chose of this value depends o
 - INFO:root: Solution for N=100: w=163 (bloat=63%) Fitness calls=53677
 - INFO:root: Solution for N=500: w=1362 (bloat=172%) Fitness calls=951009
 
-- mutation_rate = 0.80
+# mutation_rate = 0.80
 - INFO:root: Solution for N=5: w=5 (bloat=0%) Fitness calls=310
 - INFO:root: Solution for N=10: w=10 (bloat=0%) Fitness calls=1512
 - INFO:root: Solution for N=20: w=24 (bloat=20%) Fitness calls=1564
