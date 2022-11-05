@@ -12,6 +12,8 @@ The code is in the directory lab2, name of the file `main.ipynb`.
 
 I started working from the solution One Max made by professor in class and then I adapted to the Set Covering problem, creating my fitness evaluation function.
 
+- Fitness function: return the number of distinct elements and the totale number of elements from the set
+
 This is a list of major variables:
 - `N` = number of elements
 - `population` = number of sets 
