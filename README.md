@@ -4,3 +4,4 @@
 # Laboratories
 - Lab1: Set Covering
 - Lab2: Set Covering with EA
+- Lab3: Policy Search

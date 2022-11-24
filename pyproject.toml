@@ -1,20 +1,14 @@
 [tool.poetry]
-name = "lab2"
+name = "computational-intelligence-2022-2023-s303435"
 version = "0.1.0"
 description = ""
 authors = ["GabriG23 <greco.gabriele.1996@gmail.com>"]
 readme = "README.md"
+packages = [{include = "computational_intelligence_2022_2023_s303435"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-requests = "^2.28.1"
-numpy = "^1.23.4"
-matplotlib = "^3.6.2"
-python-env = "^1.0.0"
 
-
-[tool.poetry.group.dev.dependencies]
-ipykernel = "^6.17.0"
 
 [build-system]
 requires = ["poetry-core"]
