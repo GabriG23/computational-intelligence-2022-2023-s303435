@@ -14,40 +14,39 @@ Nim is a mathematical game of strategy in which two players take turns removing 
 
 Description
 
-- `my_strategy`: really simple strategy that select the shortest row and it does 3 different operations depending on the value of matches
-1. if matches <= k: close the row selecting all the matches and win
+- `my_strategy`: is really simple strategy that select the shortest row and it does 3 different operations depending on the value of matches
+1. if matches <= k: close the row selecting all the matches
 2. if matches > k*2: select k matches
-3. if matches between (k) and (k*2) it select (matches - k - 1) in order to always win in the turn after the opponent (the opponent cannot win in this case)
-4. my_strategy lose 100% of time vs nim-sum if there isn't a upperbound k for matches
+3. if matches between (k) and (k*2) it (select row elements - k) matches
 
 ##### I played against different strategies
 - `pure_random`: pick a random row and select random matches (matches < k)
 - `shortest_row`: take the shortest row and select random matches if row elements > k otherwise close the row selecting all matches
-- `optimal_solution`: nim-sum solution used by professor in class that use brute forcethe row elements
+- `optimal_solution`: nim-sum solution used by professor in class that use brute force to compute the best move
 
 ##### Results vs shortest row
-- INFO:root:Game played = 10: Winrate 1° player = 100.0% 
-- INFO:root:Game played = 100: Winrate 1° player = 100.0% 
-- INFO:root:Game played = 1000: Winrate 1° player = 100.0% 
-- INFO:root:Game played = 10: Winrate 2° player = 100.0% 
-- INFO:root:Game played = 100: Winrate 2° player = 100.0% 
-- INFO:root:Game played = 1000: Winrate 2° player = 100.0% 
+INFO:root:Game played = 10: Winrate 1° player = 60.0% 
+INFO:root:Game played = 100: Winrate 1° player = 45.0% 
+INFO:root:Game played = 1000: Winrate 1° player = 42.6% 
+INFO:root:Game played = 10: Winrate 2° player = 30.0% 
+INFO:root:Game played = 100: Winrate 2° player = 45.0% 
+INFO:root:Game played = 1000: Winrate 2° player = 39.7% 
 
 ##### Results vs pure random
-- INFO:root:Game played = 10: Winrate 1° player = 100.0% 
-- INFO:root:Game played = 100: Winrate 1° player = 99.0% 
-- INFO:root:Game played = 1000: Winrate 1° player = 99.7% 
-- INFO:root:Game played = 10: Winrate 2° player = 100.0% 
-- INFO:root:Game played = 100: Winrate 2° player = 100.0% 
-- INFO:root:Game played = 1000: Winrate 2° player = 99.1%
+INFO:root:Game played = 10: Winrate 1° player = 90.0% 
+INFO:root:Game played = 100: Winrate 1° player = 92.0% 
+INFO:root:Game played = 1000: Winrate 1° player = 84.1% 
+INFO:root:Game played = 10: Winrate 2° player = 80.0% 
+INFO:root:Game played = 100: Winrate 2° player = 83.0% 
+INFO:root:Game played = 1000: Winrate 2° player = 85.8% 
 
 ##### Results vs optimal strategy
-- INFO:root:Game played = 10: Winrate 1° player = 100.0% 
-- INFO:root:Game played = 100: Winrate 1° player = 92.0% 
-- INFO:root:Game played = 1000: Winrate 1° player = 95.7% 
-- INFO:root:Game played = 10: Winrate 2° player = 100.0% 
-- INFO:root:Game played = 100: Winrate 2° player = 98.0% 
-- INFO:root:Game played = 1000: Winrate 2° player = 95.8% 
+INFO:root:Game played = 10: Winrate 1° player = 10.0% 
+INFO:root:Game played = 100: Winrate 1° player = 5.0% 
+INFO:root:Game played = 1000: Winrate 1° player = 7.2% 
+INFO:root:Game played = 10: Winrate 2° player = 10.0% 
+INFO:root:Game played = 100: Winrate 2° player = 5.0% 
+INFO:root:Game played = 1000: Winrate 2° player = 5.4% 
 
 ## 2) Evolution Algorithm
 - The file of task 2 is `2_GA.ipynb` 
@@ -72,12 +71,9 @@ Description
 
 ##### We played against
 - `pure_random`: pick a random row and select random matches (matches < k)
-- `optimal_solution`: nim-sum solution used by professor in class that use brute forcethe row elements
 
-##### Results for pure random
-- INFO:root:The best strategy is<function GabriG_strategy> with 100.0% winrate (fitness)
-##### Results optimal strategy
-- INFO:root:The best strategy is<function GabriG_strategy> with 100.0% winrate (fitness)
+##### Results against pure random
+INFO:root:The best strategy is GabriG_strategy with 97.0% winrate (fitness)
 
 ## 3) MinMax
 - Working in progress
