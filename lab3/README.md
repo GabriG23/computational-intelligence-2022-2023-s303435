@@ -25,28 +25,28 @@ Description
 - `optimal_solution`: nim-sum solution used by professor in class that use brute force to compute the best move
 
 ##### Results vs shortest row
-INFO:root:Game played = 10: Winrate 1° player = 60.0% 
-INFO:root:Game played = 100: Winrate 1° player = 45.0% 
-INFO:root:Game played = 1000: Winrate 1° player = 42.6% 
-INFO:root:Game played = 10: Winrate 2° player = 30.0% 
-INFO:root:Game played = 100: Winrate 2° player = 45.0% 
-INFO:root:Game played = 1000: Winrate 2° player = 39.7% 
+- INFO:root:Game played = 10: Winrate 1° player = 60.0% 
+- INFO:root:Game played = 100: Winrate 1° player = 45.0% 
+- INFO:root:Game played = 1000: Winrate 1° player = 42.6% 
+- INFO:root:Game played = 10: Winrate 2° player = 30.0% 
+- INFO:root:Game played = 100: Winrate 2° player = 45.0% 
+- INFO:root:Game played = 1000: Winrate 2° player = 39.7% 
 
 ##### Results vs pure random
-INFO:root:Game played = 10: Winrate 1° player = 90.0% 
-INFO:root:Game played = 100: Winrate 1° player = 92.0% 
-INFO:root:Game played = 1000: Winrate 1° player = 84.1% 
-INFO:root:Game played = 10: Winrate 2° player = 80.0% 
-INFO:root:Game played = 100: Winrate 2° player = 83.0% 
-INFO:root:Game played = 1000: Winrate 2° player = 85.8% 
+- INFO:root:Game played = 10: Winrate 1° player = 90.0% 
+- INFO:root:Game played = 100: Winrate 1° player = 92.0% 
+- INFO:root:Game played = 1000: Winrate 1° player = 84.1% 
+- INFO:root:Game played = 10: Winrate 2° player = 80.0% 
+- INFO:root:Game played = 100: Winrate 2° player = 83.0% 
+- INFO:root:Game played = 1000: Winrate 2° player = 85.8% 
 
 ##### Results vs optimal strategy
-INFO:root:Game played = 10: Winrate 1° player = 10.0% 
-INFO:root:Game played = 100: Winrate 1° player = 5.0% 
-INFO:root:Game played = 1000: Winrate 1° player = 7.2% 
-INFO:root:Game played = 10: Winrate 2° player = 10.0% 
-INFO:root:Game played = 100: Winrate 2° player = 5.0% 
-INFO:root:Game played = 1000: Winrate 2° player = 5.4% 
+- INFO:root:Game played = 10: Winrate 1° player = 10.0% 
+- INFO:root:Game played = 100: Winrate 1° player = 5.0% 
+- INFO:root:Game played = 1000: Winrate 1° player = 7.2% 
+- INFO:root:Game played = 10: Winrate 2° player = 10.0% 
+- INFO:root:Game played = 100: Winrate 2° player = 5.0% 
+- INFO:root:Game played = 1000: Winrate 2° player = 5.4% 
 
 ## 2) Evolution Algorithm
 - The file of task 2 is `2_GA.ipynb` 
