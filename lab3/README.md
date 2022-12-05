@@ -6,10 +6,10 @@ Nim is a mathematical game of strategy in which two players take turns removing 
 ## 1) My Solution
 The solution
 - Game played: we play `10`, `100`, `1000` games vs differents opponents
-- `Rows` number: a random value from 5 to 13
-- Upperbound `k` of matches taken each round: a random value from 2 to 7
+- `Rows` number: a random value from `5 to 13`
+- Upperbound `k` of matches taken each round: a random value from `2 to 7`
 - The file of task 1 is `1_my_solution.ipynb`
-- The games have been player starting as `first player` (first move) or `second player` (second move)
+- The games have been player starting as `first player` (starts with first move) or `second player` (starts with  second move)
 - I Nim Class is the one used in by professor
 
 ##### Different strategies
@@ -17,10 +17,10 @@ The solution
 1. if matches <= k: close the row selecting all the matches and win
 2. if matches > k*2: select k matches
 3. if matches between (k) and (k*2) it select (matches - k - 1) in order to always win in the turn after the opponent (the opponent cannot win in this case)
-4. (my strategy lose 100% of time vs nim-sum if there isn't a upperbound k for matches)
+4. my_strategy lose 100% of time vs nim-sum if there isn't a upperbound k for matches
 - `pure_random`: pick a random row and select random matches (matches < k)
-- `shortest_row`: take the shortest row and select random matches if row elements > k otherwise close the row selecting all the row elements
-- `optimal_solution`: nim-sum solution used by professor in class that use brute force
+- `shortest_row`: take the shortest row and select random matches if row elements > k otherwise close the row selecting all 
+- `optimal_solution`: nim-sum solution used by professor in class that use brute forcethe row elements
 
 ##### Results vs shortest row
 - INFO:root:Game played = 10: Winrate 1° player = 100.0% 
