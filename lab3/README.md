@@ -1,15 +1,15 @@
 # Description of the Game (Wikipedia)
 Nim is a mathematical game of strategy in which two players take turns removing objects from a distinct heap or piles. On each turn, a player must remove at least one object, and may remove any number of objects provided they all come from the same heap or pile.
-- Goal: in order to **win we need to take the last object**
+- `Goal: in order to win we need to take the last object`
 
 # Solutions & Results
 ## 1) My Solution
 The solution
-- Game played: we play 10, 100, 1000 games vs differents opponents
-- Rows number: a random value from 5 to 13
-- Upperbound k of matches taken each round: a random value from 2 to 7
+- Game played: we play `10`, `100`, `1000` games vs differents opponents
+- `Rows` number: a random value from 5 to 13
+- Upperbound `k` of matches taken each round: a random value from 2 to 7
 - The file of task 1 is `1_my_solution.ipynb`
-- The games have been player starting as first player (first move) or second player (second move)
+- The games have been player starting as `first player` (first move) or `second player` (second move)
 - I Nim Class is the one used in by professor
 
 ##### Different strategies
@@ -23,28 +23,28 @@ The solution
 - `optimal_solution`: nim-sum solution used by professor in class that use brute force
 
 ##### Results vs shortest row
-INFO:root:Game played = 10: Winrate 1° player = 100.0% 
-INFO:root:Game played = 100: Winrate 1° player = 100.0% 
-INFO:root:Game played = 1000: Winrate 1° player = 100.0% 
-INFO:root:Game played = 10: Winrate 2° player = 100.0% 
-INFO:root:Game played = 100: Winrate 2° player = 100.0% 
-INFO:root:Game played = 1000: Winrate 2° player = 100.0% 
+- INFO:root:Game played = 10: Winrate 1° player = 100.0% 
+- INFO:root:Game played = 100: Winrate 1° player = 100.0% 
+- INFO:root:Game played = 1000: Winrate 1° player = 100.0% 
+- INFO:root:Game played = 10: Winrate 2° player = 100.0% 
+- INFO:root:Game played = 100: Winrate 2° player = 100.0% 
+- INFO:root:Game played = 1000: Winrate 2° player = 100.0% 
 
 ##### Results vs pure random
-INFO:root:Game played = 10: Winrate 1° player = 100.0% 
-INFO:root:Game played = 100: Winrate 1° player = 99.0% 
-INFO:root:Game played = 1000: Winrate 1° player = 99.7% 
-INFO:root:Game played = 10: Winrate 2° player = 100.0% 
-INFO:root:Game played = 100: Winrate 2° player = 100.0% 
-INFO:root:Game played = 1000: Winrate 2° player = 99.1%
+- INFO:root:Game played = 10: Winrate 1° player = 100.0% 
+- INFO:root:Game played = 100: Winrate 1° player = 99.0% 
+- INFO:root:Game played = 1000: Winrate 1° player = 99.7% 
+- INFO:root:Game played = 10: Winrate 2° player = 100.0% 
+- INFO:root:Game played = 100: Winrate 2° player = 100.0% 
+- INFO:root:Game played = 1000: Winrate 2° player = 99.1%
 
 ##### Results vs optimal strategy
-INFO:root:Game played = 10: Winrate 1° player = 100.0% 
-INFO:root:Game played = 100: Winrate 1° player = 92.0% 
-INFO:root:Game played = 1000: Winrate 1° player = 95.7% 
-INFO:root:Game played = 10: Winrate 2° player = 100.0% 
-INFO:root:Game played = 100: Winrate 2° player = 98.0% 
-INFO:root:Game played = 1000: Winrate 2° player = 95.8% 
+- INFO:root:Game played = 10: Winrate 1° player = 100.0% 
+- INFO:root:Game played = 100: Winrate 1° player = 92.0% 
+- INFO:root:Game played = 1000: Winrate 1° player = 95.7% 
+- INFO:root:Game played = 10: Winrate 2° player = 100.0% 
+- INFO:root:Game played = 100: Winrate 2° player = 98.0% 
+- INFO:root:Game played = 1000: Winrate 2° player = 95.8% 
 
 ## 2) Evolution Algorithm
 - The file of task 1 is `2_GA.ipynb` 
