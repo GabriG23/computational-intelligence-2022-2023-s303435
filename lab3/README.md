@@ -62,9 +62,7 @@ Description
 
 ##### Differents strategy used
 1. `shortest_row`: take the shortest row and select random matches if row elements > k otherwise close the row selecting all matches
-2. `Davide_strategy`: find all the possibles moves and then:
-- if there are more than 1 moves, select a random row and select the maximum number of matches than he can take (elements < k)
-- otherwise select random elements from the row (elements < k)
+2. `Davide_strategy`: it finds all the possibles moves then selects a random row and takes always at least k objects. If there is no upperbound for that row, it takes all of the objects. If there are no rows with more then one object, it starts to take one object random from the remained rows.
 3. `GabriG_strategy`: is the my_strategy use in task 1 (see above the description)
 4. `longest_row`: take the longest row and select random matches if row elements > k otherwise close the row selecting all matches
 5. `pure_random`: pick a random row and select random matches (matches < k)
