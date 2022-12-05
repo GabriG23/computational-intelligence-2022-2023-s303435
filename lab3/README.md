@@ -69,9 +69,11 @@ Description
 
 ##### We played against
 - `pure_random`: pick a random row and select random matches (matches < k)
+- `optimal_solution`: nim-sum solution used by professor in class that use brute force to compute the best move
 
-##### Results against pure random
+##### Results against pure random and optimal_strategy
 INFO:root:The best strategy is GabriG_strategy with 97.0% winrate (fitness)
+INFO:root:The best strategy is shortest_row with 14.0% winrate (fitness)
 
 ## 3) MinMax
 - Working in progress
