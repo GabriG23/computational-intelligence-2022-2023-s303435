@@ -76,7 +76,38 @@ INFO:root:The best strategy is GabriG_strategy with 97.0% winrate (fitness)
 INFO:root:The best strategy is shortest_row with 14.0% winrate (fitness)
 
 ## 3) MinMax
-- Working in progress
+For this task I've created code starting from the minimax pseudocode on [wikipedia](https://en.wikipedia.org/wiki/Minimax).
+- The setup is the same one used for the other tasks. The main algorithm is composed by 3 functions:
+- `find_best_move`: starting from all the possible moves of that position I compute the best move evaluating it with minmax_min function, that return the value of the best move. If the value is greater than the current want, I swap the move
+- `minmax_nim`: it first check the value returned by the evaluation function, the depth, the possible moves and return 0 if it these values are not satisfied. Then it procede going down with the tree checking if we need to do our move or opponents move and compute the value of the node
+- `evaluation`: check the current position and return -1 if we lost, 1 if we won and 0 if we neither won or lost
+- to reduce computational time I chose a `depth bound equal to 4`
+
+##### I played against
+- `pure_random`: pick a random row and select random matches (matches < k)
+- `optimal_strategy`: nim-sum solution used by professor in class that use brute force to compute the best move
+- `shortest_row`: take the shortest row and select random matches if row elements > k otherwise close the row selecting all matches
+
+### Results
+- I played 100 and 1000 games for each strategy as first and second player
+##### vs optimal strategy
+1. with rows = 3 and k = 1 I obtained 100% win rate if I start first and 0% if I starts second. This is the other way around with rows = 4 as I win 100% of time as second player and 0% as first player
+2. with k = 2 and rows > 5 I obtained from 5% to 10% winrate as both first and second player
+- Below there are the overall result with randoms rows (from 3 to 6) and random upper bound k (from 1 to 4)
+- INFO:root:Game played = 100: Winrate 1° player = 12.0% 
+- INFO:root:Game played = 1000: Winrate 1° player = 13.3% 
+- INFO:root:Game played = 100: Winrate 2° player = 18.0% 
+- INFO:root:Game played = 1000: Winrate 2° player = 13.0% 
+##### vs pure_random
+- INFO:root:Game played = 100: Winrate 1° player = 44.0% 
+- INFO:root:Game played = 1000: Winrate 1° player = 44.2% 
+- INFO:root:Game played = 100: Winrate 2° player = 45.0% 
+- INFO:root:Game played = 1000: Winrate 2° player = 43.4% 
+##### vs shortest_row
+- INFO:root:Game played = 100: Winrate 1° player = 22.0% 
+- INFO:root:Game played = 1000: Winrate 1° player = 23.5% 
+- INFO:root:Game played = 100: Winrate 2° player = 32.0% 
+- INFO:root:Game played = 1000: Winrate 2° player = 22.8% 
 
 ## 4) Reinforcement learning
 - Working in progress
