@@ -8,6 +8,7 @@ packages = [{include = "computational_intelligence_2022_2023_s303435"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+matplotlib = "^3.6.2"
 
 
 [tool.poetry.group.dev.dependencies]

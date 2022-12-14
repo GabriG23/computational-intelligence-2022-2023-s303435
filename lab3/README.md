@@ -110,4 +110,39 @@ For this task I've created code starting from the minimax pseudocode on [wikiped
 - INFO:root:Game played = 1000: Winrate 2° player = 22.8% 
 
 ## 4) Reinforcement learning
-- Working in progress
+- I started from the code of Maze uploaded by Andrea Calabrese and then made some changes for my solution.
+- The `Nim Class` is the same as the solutions above, I just added a get reward function that return 1 if the game is won, -1 if lost or 0 if None of them.
+- I played againt `simple_strategy` (take always 1 from a random row), `pure_random`, `shortest_row` and `optimal_solution`
+- `Agent`:
+1. `init`: initialize all the variable and the vector G, which is a vector containing all the possible moves that we can execute
+2. `choose_action`: from all the possible action pick the one with highest value of G
+3. `update_state_history`: update the story after every made move
+4. `learn`: the agent learn at the end of a game going through all history
+- Main Function: I played 1000 games vs each strategy, counting the number of win after 100 games. 
+
+I did not have much time to work on this last task due to personal issue, but it seems like there's no "learning" after each block of games, but the results are always the same for each strategy. This is probably due to a bad choice of G, some others state could be the state of rows in the current games + all the available moves
+
+- vs pure random
+- INFO:root:Game played = 100: Winrate = 51.0% 
+- INFO:root:Game played = 300: Winrate = 44.0% 
+- INFO:root:Game played = 500: Winrate = 49.0% 
+- INFO:root:Game played = 700: Winrate = 51.0% 
+- INFO:root:Game played = 900: Winrate = 46.0% 
+- vs shortest row
+- INFO:root:Game played = 100: Winrate = 31.0% 
+- INFO:root:Game played = 300: Winrate = 23.0% 
+- INFO:root:Game played = 500: Winrate = 31.0% 
+- INFO:root:Game played = 700: Winrate = 26.0% 
+- INFO:root:Game played = 900: Winrate = 31.0% 
+- vs optimal
+- INFO:root:Game played = 100: Winrate = 6.0% 
+- INFO:root:Game played = 300: Winrate = 2.0% 
+- INFO:root:Game played = 500: Winrate = 3.0% 
+- INFO:root:Game played = 700: Winrate = 3.0% 
+- INFO:root:Game played = 900: Winrate = 2.0%
+- vs simple strategy
+- INFO:root:Game played = 100: Winrate = 60.0% 
+- INFO:root:Game played = 300: Winrate = 49.0% 
+- INFO:root:Game played = 500: Winrate = 51.0% 
+- INFO:root:Game played = 700: Winrate = 59.0% 
+- INFO:root:Game played = 900: Winrate = 63.0% 
