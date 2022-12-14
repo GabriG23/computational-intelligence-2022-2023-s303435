@@ -122,25 +122,25 @@ For this task I've created code starting from the minimax pseudocode on [wikiped
 
 I did not have much time to work on this last task due to personal issue, but it seems like there's no "learning" after each block of games, but the results are always the same for each strategy. This is probably due to a bad choice of G, some others state could be the state of rows in the current games + all the available moves
 
-- vs pure random
+vs pure random
 - INFO:root:Game played = 100: Winrate = 51.0% 
 - INFO:root:Game played = 300: Winrate = 44.0% 
 - INFO:root:Game played = 500: Winrate = 49.0% 
 - INFO:root:Game played = 700: Winrate = 51.0% 
 - INFO:root:Game played = 900: Winrate = 46.0% 
-- vs shortest row
+vs shortest row
 - INFO:root:Game played = 100: Winrate = 31.0% 
 - INFO:root:Game played = 300: Winrate = 23.0% 
 - INFO:root:Game played = 500: Winrate = 31.0% 
 - INFO:root:Game played = 700: Winrate = 26.0% 
 - INFO:root:Game played = 900: Winrate = 31.0% 
-- vs optimal
+vs optimal
 - INFO:root:Game played = 100: Winrate = 6.0% 
 - INFO:root:Game played = 300: Winrate = 2.0% 
 - INFO:root:Game played = 500: Winrate = 3.0% 
 - INFO:root:Game played = 700: Winrate = 3.0% 
 - INFO:root:Game played = 900: Winrate = 2.0%
-- vs simple strategy
+vs simple strategy
 - INFO:root:Game played = 100: Winrate = 60.0% 
 - INFO:root:Game played = 300: Winrate = 49.0% 
 - INFO:root:Game played = 500: Winrate = 51.0% 
